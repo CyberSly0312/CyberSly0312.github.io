@@ -10,27 +10,19 @@ A bilingual (English/French), responsive cybersecurity and development portfolio
 
 ## Run locally
 Open `index.html` in your browser. No build tools or package installation are required.
+To test the certificate file checks, serve the folder over HTTP (for example, `python -m http.server`); browsers restrict requests from `file://` pages.
 
 ## Personalise before publishing
 
-### 1. Add your portrait
-Replace `assets/profile-placeholder.svg` as the displayed image by adding your own image as:
+### 1. Update your portrait
+The page uses `assets/profile.jpg`. Replace that file with your portrait, keeping the same filename, or update the image path in `index.html`. The included SVG is used as a fallback if the JPG cannot be loaded.
 
-`assets/profile.jpg`
+### 2. Maintain credentials and professional information
+The new sections are populated from `portfolio-data.js`. Add or update records there; each text description supports `en` and `fr`.
 
-The HTML currently points to the placeholder. In `index.html`, change:
-```html
-<img id="portrait" src="assets/profile-placeholder.svg" ...>
-```
-to:
-```html
-<img id="portrait" src="assets/profile.jpg" ...>
-```
+Place certificate PDFs in `assets/documents/certificates/` and academic PDFs in `assets/documents/academic/`. Then set each record's `pdfPath` to its relative path. The page checks that the file exists before enabling the view and download actions. Leave paths and verification URLs `null` until real documents or public verification links are available.
 
-Use a clear, professional portrait (square or vertical crop works best).
-
-### 2. Confirm profile details
-The GitHub username is set to `CyberSly0312` in `script.js`. Review the location, education, project descriptions and contact links in `index.html` and `script.js`.
+Experience types, dates, responsibilities, achievements, technologies, and evidence links are also maintained in `portfolio-data.js`. Only add details that can be confirmed. In the professional footprint list, use `url: null` until a public profile or project URL is confirmed.
 
 ### 3. Add your CV
 When your CV is ready, place it in `assets/` and add a download link in the hero section.

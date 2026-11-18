@@ -10,18 +10,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="professional.css">
+  <script src="portfolio-data.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body>
   <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
   <header class="topbar">
     <a class="brand" href="#home" aria-label="Sylvestre home"><span class="brand-mark">SZ<span>.</span></span><span class="brand-label">digital identity<span class="brand-slash"> / </span>portfolio</span></a>
-    <nav class="desktop-nav">
+    <nav class="desktop-nav" id="primaryNav" aria-label="Primary navigation">
       <a href="#about" data-i18n="navAbout">About</a><a href="#stack" data-i18n="navStack">Stack</a>
       <a href="#projects" data-i18n="navProjects">Projects</a><a href="#activity" data-i18n="navActivity">Activity</a>
+      <a href="#credentials" data-i18n="navCredentials">Credentials</a><a href="#experience" data-i18n="navExperience">Experience</a>
+      <a href="#footprint" data-i18n="navFootprint">Verified work</a>
       <a href="#contact" data-i18n="navContact">Contact</a>
     </nav>
-    <div class="top-actions"><button class="lang-switch" id="langSwitch" aria-label="Switch language">FR <span>/</span> EN</button><a class="github-top" href="https://github.com/CyberSly0312" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button></div>
+    <div class="top-actions"><button class="lang-switch" id="langSwitch" aria-label="Switch language">FR <span>/</span> EN</button><a class="github-top" href="https://github.com/CyberSly0312" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">☰</button></div>
   </header>
 
   <main>
@@ -87,8 +91,8 @@
     <section class="projects-section section-wrap" id="projects">
       <div class="section-heading"><div><p class="section-index mono">04 // SELECTED_WORK</p><h2 data-i18n="projectsTitle">Things I've been building.</h2></div><a class="text-link mono" href="https://github.com/CyberSly0312?tab=repositories" target="_blank" rel="noreferrer"><span data-i18n="allRepos">ALL REPOSITORIES</span> ↗</a></div>
       <div class="projects-grid">
-        <article class="project-card project-featured"><div class="project-visual project-school"><div class="visual-grid"></div><div class="project-window"><div class="mini-window-bar"><i></i><i></i><i></i><span>nexus_school</span></div><div class="mini-sidebar"></div><div class="mini-content"><b></b><b></b><b></b><div class="mini-table"></div></div></div><span class="visual-label mono">ERP / MULTI-TENANT</span></div><div class="project-info"><div class="project-type mono"><span data-i18n="projectTypeBuild">IN DEVELOPMENT</span><span>01 / 03</span></div><h3>NexusSchool</h3><p data-i18n="nexusDesc">A school management platform designed around the needs of French-speaking schools, with multi-tenant architecture and modular academic workflows.</p><div class="tag-list mono"><span>Laravel</span><span>PHP</span><span>Filament</span><span>MySQL</span></div><a class="project-link" href="https://github.com/CyberSly0312/NexusSchool-version-1.oou" target="_blank" rel="noreferrer"><span data-i18n="viewRepository">View repository</span> ↗</a></div></article>
-        <article class="project-card"><div class="project-visual project-shop"><div class="shop-bag">S<span>H</span></div><div class="shop-lines"><i></i><i></i><i></i></div><span class="visual-label mono">WEB APPLICATION</span></div><div class="project-info"><div class="project-type mono"><span data-i18n="projectTypeBuild">IN DEVELOPMENT</span><span>02 / 03</span></div><h3>ShopToo</h3><p data-i18n="shopDesc">An e-commerce application project exploring backend development, API design and database-driven features.</p><div class="tag-list mono"><span>Python</span><span>Django REST</span><span>PostgreSQL</span></div><a class="project-link" href="https://github.com/CyberSly0312/ShopToo" target="_blank" rel="noreferrer"><span data-i18n="viewRepository">View repository</span> ↗</a></div></article>
+        <article class="project-card project-featured"><div class="project-visual project-school"><div class="visual-grid"></div><div class="project-window"><div class="mini-window-bar"><i></i><i></i><i></i><span>nexus_school</span></div><div class="mini-sidebar"></div><div class="mini-content"><b></b><b></b><b></b><div class="mini-table"></div></div></div><span class="visual-label mono">ERP / MULTI-TENANT</span></div><div class="project-info"><div class="project-type mono"><span data-i18n="projectTypeBuild">IN DEVELOPMENT</span><span>01 / 03</span></div><h3>NexusSchool</h3><p data-i18n="nexusDesc">A school management platform designed around the needs of French-speaking schools, with multi-tenant architecture and modular academic workflows.</p><div class="tag-list mono"><span>Laravel</span><span>PHP</span><span>Filament</span><span>MySQL</span></div><a class="project-link" href="https://github.com/CyberSly0312?tab=repositories" target="_blank" rel="noreferrer"><span data-i18n="viewRepository">Browse repositories</span> ↗</a></div></article>
+        <article class="project-card"><div class="project-visual project-shop"><div class="shop-bag">S<span>H</span></div><div class="shop-lines"><i></i><i></i><i></i></div><span class="visual-label mono">WEB APPLICATION</span></div><div class="project-info"><div class="project-type mono"><span data-i18n="projectTypeBuild">IN DEVELOPMENT</span><span>02 / 03</span></div><h3>ShopToo</h3><p data-i18n="shopDesc">An e-commerce application project exploring backend development, API design and database-driven features.</p><div class="tag-list mono"><span>Python</span><span>Django REST</span><span>PostgreSQL</span></div><a class="project-link" href="https://github.com/CyberSly0312?tab=repositories" target="_blank" rel="noreferrer"><span data-i18n="viewRepository">Browse repositories</span> ↗</a></div></article>
         <article class="project-card"><div class="project-visual project-web"><div class="code-lines mono"><span>&lt;section&gt;</span><span class="indent">&lt;h1&gt;Build with purpose&lt;/h1&gt;</span><span class="indent">&lt;p&gt;Digital solutions&lt;/p&gt;</span><span>&lt;/section&gt;</span></div><span class="visual-label mono">CLIENT WEB PROJECT</span></div><div class="project-info"><div class="project-type mono"><span data-i18n="projectTypeLive">DEPLOYED PROJECT</span><span>03 / 03</span></div><h3>Aganiwu Enterprise</h3><p data-i18n="aganiwuDesc">A business website developed with native PHP, MySQL and frontend technologies, including a custom content management area.</p><div class="tag-list mono"><span>PHP</span><span>JavaScript</span><span>MySQL</span><span>CSS</span></div><a class="project-link" href="https://aganiwu-enterprise.freedev.app/" target="_blank" rel="noreferrer"><span data-i18n="visitWebsite">Visit website</span> ↗</a></div></article>
       </div>
       <p class="projects-footnote mono" data-i18n="projectNote">Project descriptions reflect current known scope. More case studies and screenshots will be added as projects are documented.</p>
@@ -104,17 +108,40 @@
       </div>
     </section>
 
-    <section class="credentials-section section-wrap">
-      <div class="section-heading"><div><p class="section-index mono">06 // LEARNING.LOG</p><h2 data-i18n="learningTitle">Always in progress.</h2></div><span class="section-tag mono">/ knowledge.base</span></div>
+    <section class="credentials-section section-wrap" id="credentials">
+      <div class="section-heading"><div><p class="section-index mono">06 // CREDENTIALS.LOG</p><h2 data-i18n="credentialsTitle">Credentials & education.</h2></div><span class="section-tag mono">/ records.index</span></div>
+      <div class="credential-category">
+        <div class="credential-category-heading"><h3 data-i18n="professionalCertifications">Professional certifications</h3><span class="mono" data-i18n="certificatesPath">assets/documents/certificates/</span></div>
+        <div class="credential-grid" id="professionalCredentials"></div>
+      </div>
+      <div class="credential-category">
+        <div class="credential-category-heading"><h3 data-i18n="academicCredentials">Academic credentials</h3><span class="mono" data-i18n="academicPath">assets/documents/academic/</span></div>
+        <div class="credential-grid" id="academicCredentials"></div>
+      </div>
+      <p class="credential-disclaimer mono" data-i18n="credentialDisclaimer">Only listed items with supplied documents or public verification links can be opened. Pending details are not endorsements or verification claims.</p>
+    </section>
+
+    <section class="experience-section section-wrap" id="experience">
+      <div class="section-heading"><div><p class="section-index mono">07 // EXPERIENCE.LOG</p><h2 data-i18n="experienceTitle">Experience in practice.</h2></div><span class="section-tag mono">/ timeline.read()</span></div>
+      <div class="experience-timeline" id="experienceTimeline"></div>
+    </section>
+
+    <section class="footprint-section section-wrap" id="footprint">
+      <div class="section-heading"><div><p class="section-index mono">08 // PUBLIC.FOOTPRINT</p><h2 data-i18n="footprintTitle">Verified work & profiles.</h2></div><span class="section-tag mono">/ public.links</span></div>
+      <p class="footprint-intro" data-i18n="footprintIntro">Public links and profiles. A link's presence does not imply third-party endorsement.</p>
+      <div class="footprint-grid" id="footprintGrid"></div>
+    </section>
+
+    <section class="credentials-section section-wrap learning-section" id="learning">
+      <div class="section-heading"><div><p class="section-index mono">09 // PRACTICE.LOG</p><h2 data-i18n="learningTitle">Always in progress.</h2></div><span class="section-tag mono">/ knowledge.base</span></div>
       <div class="learning-grid">
-        <div class="learning-card glass-card"><span class="learning-icon">◈</span><div><p class="mono learning-kind" data-i18n="certifications">CERTIFICATIONS & COURSES</p><h3 data-i18n="certTitle">Building a foundation.</h3><ul><li>Cisco — Introduction to Cybersecurity</li><li>ANSSI — MOOC Sécurité Numérique</li><li>Google — Technical Support Fundamentals</li><li>Microsoft — AI Skills Fest learning badges</li></ul></div></div>
-        <div class="learning-card glass-card"><span class="learning-icon">⌁</span><div><p class="mono learning-kind" data-i18n="labTitle">PRACTICAL LEARNING</p><h3 data-i18n="labHeadline">Learning in the lab.</h3><ul><li>TryHackMe — hands-on learning paths</li><li>Hack The Box — security challenges</li><li>CyberDefenders — blue-team investigations</li><li>Linux troubleshooting and home labs</li></ul></div></div>
+        <div class="learning-card glass-card"><span class="learning-icon">⌁</span><div><p class="mono learning-kind" data-i18n="labTitle">PRACTICAL LEARNING</p><h3 data-i18n="labHeadline">Learning in the lab.</h3><ul><li data-i18n="tryhackmeLearning">TryHackMe — hands-on learning paths</li><li data-i18n="htbLearning">Hack The Box — security challenges</li><li data-i18n="cyberdefendersLearning">CyberDefenders — blue-team investigations</li><li data-i18n="linuxLearning">Linux troubleshooting and home labs</li></ul></div></div>
       </div>
     </section>
 
     <section class="contact-section section-wrap" id="contact">
       <div class="contact-card">
-        <div class="contact-orbit"></div><p class="section-index mono">07 // ESTABLISH_CONNECTION</p>
+        <div class="contact-orbit"></div><p class="section-index mono">10 // ESTABLISH_CONNECTION</p>
         <h2 data-i18n="contactTitle">Have something<br><span>interesting in mind?</span></h2>
         <p data-i18n="contactText">I'm always interested in thoughtful conversations, collaborative projects and opportunities to learn.</p>
         <a class="btn btn-primary contact-button" href="mailto:zkshine@proton.me"><span data-i18n="sendMessage">Send me a message</span> ↗</a>
