@@ -1,0 +1,7 @@
+# Private, local-only documents. Never commit or publish these.
+private-documents/
+
+# OS noise
+.DS_Store
+Thumbs.db
+*.swp

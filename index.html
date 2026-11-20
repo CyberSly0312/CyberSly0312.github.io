@@ -9,10 +9,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="professional.css">
-  <script src="portfolio-data.js" defer></script>
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css?v=20261120s1">
+  <link rel="stylesheet" href="professional.css?v=20261120s1">
+  <script src="data-loader.js?v=20261119" defer></script>
+  <script src="security-utils.js?v=20261119" defer></script>
+  <script src="script.js?v=20261119h" defer></script>
 </head>
 <body>
   <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
@@ -25,7 +26,7 @@
       <a href="#footprint" data-i18n="navFootprint">Verified work</a>
       <a href="#contact" data-i18n="navContact">Contact</a>
     </nav>
-    <div class="top-actions"><button class="lang-switch" id="langSwitch" aria-label="Switch language">FR <span>/</span> EN</button><a class="github-top" href="https://github.com/CyberSly0312" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">☰</button></div>
+    <div class="top-actions"><button class="lang-switch" id="langSwitch" aria-label="Switch language">FR <span>/</span> EN</button><a class="github-top" id="githubTopLink" href="https://github.com/CyberSly0312" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">☰</button></div>
   </header>
 
   <main>
@@ -89,17 +90,13 @@
     </section>
 
     <section class="projects-section section-wrap" id="projects">
-      <div class="section-heading"><div><p class="section-index mono">04 // SELECTED_WORK</p><h2 data-i18n="projectsTitle">Things I've been building.</h2></div><a class="text-link mono" href="https://github.com/CyberSly0312?tab=repositories" target="_blank" rel="noreferrer"><span data-i18n="allRepos">ALL REPOSITORIES</span> ↗</a></div>
-      <div class="projects-grid">
-        <article class="project-card project-featured"><div class="project-visual project-school"><div class="visual-grid"></div><div class="project-window"><div class="mini-window-bar"><i></i><i></i><i></i><span>nexus_school</span></div><div class="mini-sidebar"></div><div class="mini-content"><b></b><b></b><b></b><div class="mini-table"></div></div></div><span class="visual-label mono">ERP / MULTI-TENANT</span></div><div class="project-info"><div class="project-type mono"><span data-i18n="projectTypeBuild">IN DEVELOPMENT</span><span>01 / 03</span></div><h3>NexusSchool</h3><p data-i18n="nexusDesc">A school management platform designed around the needs of French-speaking schools, with multi-tenant architecture and modular academic workflows.</p><div class="tag-list mono"><span>Laravel</span><span>PHP</span><span>Filament</span><span>MySQL</span></div><a class="project-link" href="https://github.com/CyberSly0312?tab=repositories" target="_blank" rel="noreferrer"><span data-i18n="viewRepository">Browse repositories</span> ↗</a></div></article>
-        <article class="project-card"><div class="project-visual project-shop"><div class="shop-bag">S<span>H</span></div><div class="shop-lines"><i></i><i></i><i></i></div><span class="visual-label mono">WEB APPLICATION</span></div><div class="project-info"><div class="project-type mono"><span data-i18n="projectTypeBuild">IN DEVELOPMENT</span><span>02 / 03</span></div><h3>ShopToo</h3><p data-i18n="shopDesc">An e-commerce application project exploring backend development, API design and database-driven features.</p><div class="tag-list mono"><span>Python</span><span>Django REST</span><span>PostgreSQL</span></div><a class="project-link" href="https://github.com/CyberSly0312?tab=repositories" target="_blank" rel="noreferrer"><span data-i18n="viewRepository">Browse repositories</span> ↗</a></div></article>
-        <article class="project-card"><div class="project-visual project-web"><div class="code-lines mono"><span>&lt;section&gt;</span><span class="indent">&lt;h1&gt;Build with purpose&lt;/h1&gt;</span><span class="indent">&lt;p&gt;Digital solutions&lt;/p&gt;</span><span>&lt;/section&gt;</span></div><span class="visual-label mono">CLIENT WEB PROJECT</span></div><div class="project-info"><div class="project-type mono"><span data-i18n="projectTypeLive">DEPLOYED PROJECT</span><span>03 / 03</span></div><h3>Aganiwu Enterprise</h3><p data-i18n="aganiwuDesc">A business website developed with native PHP, MySQL and frontend technologies, including a custom content management area.</p><div class="tag-list mono"><span>PHP</span><span>JavaScript</span><span>MySQL</span><span>CSS</span></div><a class="project-link" href="https://aganiwu-enterprise.freedev.app/" target="_blank" rel="noreferrer"><span data-i18n="visitWebsite">Visit website</span> ↗</a></div></article>
-      </div>
+      <div class="section-heading"><div><p class="section-index mono">04 // SELECTED_WORK</p><h2 data-i18n="projectsTitle">Things I've been building.</h2></div><a class="text-link mono" id="allReposLink" href="https://github.com/CyberSly0312?tab=repositories" target="_blank" rel="noreferrer"><span data-i18n="allRepos">ALL REPOSITORIES</span> ↗</a></div>
+      <div class="projects-grid" id="projectsGrid" aria-live="polite"></div>
       <p class="projects-footnote mono" data-i18n="projectNote">Project descriptions reflect current known scope. More case studies and screenshots will be added as projects are documented.</p>
     </section>
 
     <section class="activity-section section-wrap" id="activity">
-      <div class="section-heading"><div><p class="section-index mono">05 // ACTIVITY.LOG</p><h2 data-i18n="activityTitle">Consistency over noise.</h2></div><a class="text-link mono" href="https://github.com/CyberSly0312" target="_blank" rel="noreferrer">GITHUB ↗</a></div>
+      <div class="section-heading"><div><p class="section-index mono">05 // ACTIVITY.LOG</p><h2 data-i18n="activityTitle">Consistency over noise.</h2></div><a class="text-link mono" id="activityGithubLink" href="https://github.com/CyberSly0312" target="_blank" rel="noreferrer">GITHUB ↗</a></div>
       <div class="activity-panel glass-card">
         <div class="activity-header"><div><h3 data-i18n="contributionTitle">Contribution activity</h3><p class="mono" id="contributionSummary" data-i18n="contributionLoading">Loading public contribution data…</p></div><span class="activity-year mono" id="activityYear"></span></div>
         <div class="calendar-scroll"><div class="calendar-months mono" id="calendarMonths"></div><div class="calendar-layout"><div class="calendar-days mono"><span>Mon</span><span></span><span>Wed</span><span></span><span>Fri</span><span></span><span></span></div><div class="contribution-grid" id="contributionGrid" aria-label="GitHub contribution calendar"></div></div></div>
@@ -112,6 +109,7 @@
       <div class="section-heading"><div><p class="section-index mono">06 // CREDENTIALS.LOG</p><h2 data-i18n="credentialsTitle">Credentials & education.</h2></div><span class="section-tag mono">/ records.index</span></div>
       <div class="credential-category">
         <div class="credential-category-heading"><h3 data-i18n="professionalCertifications">Professional certifications</h3><span class="mono" data-i18n="certificatesPath">assets/documents/certificates/</span></div>
+        <div class="credential-filters" id="certificationFilters" aria-label="Filter certifications by category"></div>
         <div class="credential-grid" id="professionalCredentials"></div>
       </div>
       <div class="credential-category">
@@ -145,7 +143,7 @@
         <h2 data-i18n="contactTitle">Have something<br><span>interesting in mind?</span></h2>
         <p data-i18n="contactText">I'm always interested in thoughtful conversations, collaborative projects and opportunities to learn.</p>
         <a class="btn btn-primary contact-button" href="mailto:zkshine@proton.me"><span data-i18n="sendMessage">Send me a message</span> ↗</a>
-        <div class="contact-links"><a href="mailto:zkshine@proton.me">Email</a><a href="https://www.linkedin.com/in/n-w-sylvestre-zongo-61579a20/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/CyberSly0312" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+        <div class="contact-links"><a href="mailto:zkshine@proton.me">Email</a><a id="contactLinkedIn" href="https://www.linkedin.com/in/n-w-sylvestre-zongo-61579a20/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a id="contactGithub" href="https://github.com/CyberSly0312" target="_blank" rel="noreferrer">GitHub ↗</a></div>
       </div>
     </section>
   </main>

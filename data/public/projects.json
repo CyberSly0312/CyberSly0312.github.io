@@ -1,0 +1,53 @@
+[
+  {
+    "id": "nexusschool",
+    "title": "NexusSchool",
+    "visual": "school",
+    "visualLabel": {
+      "en": "ERP / MULTI-TENANT",
+      "fr": "ERP / MULTI-TENANT"
+    },
+    "status": "development",
+    "featured": true,
+    "description": {
+      "en": "A school management platform designed around the needs of French-speaking schools, with multi-tenant architecture and modular academic workflows.",
+      "fr": "Une plateforme de gestion scolaire pensée pour les établissements francophones, avec une architecture multi-tenant et des modules dédiés aux processus académiques."
+    },
+    "technologies": ["Laravel", "PHP", "Filament", "MySQL"],
+    "url": "https://github.com/CyberSly0312?tab=repositories"
+  },
+  {
+    "id": "shoptoo",
+    "title": "ShopToo",
+    "visual": "shop",
+    "visualLabel": {
+      "en": "WEB APPLICATION",
+      "fr": "APPLICATION WEB"
+    },
+    "status": "development",
+    "featured": false,
+    "description": {
+      "en": "An e-commerce application project exploring backend development, API design and database-driven features.",
+      "fr": "Un projet d'application e-commerce consacré au développement backend, à la conception d'API et aux fonctionnalités pilotées par une base de données."
+    },
+    "technologies": ["Python", "Django REST", "PostgreSQL"],
+    "url": "https://github.com/CyberSly0312?tab=repositories"
+  },
+  {
+    "id": "aganiwu-enterprise",
+    "title": "Aganiwu Enterprise",
+    "visual": "code",
+    "visualLabel": {
+      "en": "CLIENT WEB PROJECT",
+      "fr": "PROJET WEB CLIENT"
+    },
+    "status": "live",
+    "featured": false,
+    "description": {
+      "en": "A business website developed with native PHP, MySQL and frontend technologies, including a custom content management area.",
+      "fr": "Un site web professionnel développé avec PHP natif, MySQL et des technologies frontend, comprenant un espace de gestion de contenu personnalisé."
+    },
+    "technologies": ["PHP", "JavaScript", "MySQL", "CSS"],
+    "url": "https://aganiwu-enterprise.freedev.app/"
+  }
+]

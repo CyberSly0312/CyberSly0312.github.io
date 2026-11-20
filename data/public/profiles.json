@@ -1,0 +1,60 @@
+[
+  {
+    "id": "github",
+    "category": "profile",
+    "icon": "github",
+    "title": "GitHub",
+    "description": {
+      "en": "Public developer profile and repositories.",
+      "fr": "Profil développeur public et dépôts."
+    },
+    "url": "https://github.com/CyberSly0312"
+  },
+  
+  {
+    "id": "linkedin",
+    "category": "profile",
+    "icon": "linkedin",
+    "title": "LinkedIn",
+    "description": {
+      "en": "Professional profile and background.",
+      "fr": "Profil professionnel et parcours."
+    },
+    "url": "https://www.linkedin.com/in/n-w-sylvestre-zongo-61579a20/"
+  },
+
+  
+  {
+    "id": "tryhackme",
+    "category": "learning-profile",
+    "icon": "tryhackme",
+    "title": "TryHackMe",
+    "description": {
+      "en": "Dynamic badge and public learning profile.",
+      "fr": "Badge dynamique et profil d'apprentissage public."
+    },
+    "url": "https://tryhackme.com/p/BoldGuy"
+  },
+  {
+    "id": "hackthebox",
+    "category": "learning-profile",
+    "icon": "hackthebox",
+    "title": "Hack The Box",
+    "description": {
+      "en": "Security challenge platform; profile URL pending confirmation.",
+      "fr": "Plateforme de défis de sécurité ; URL du profil à confirmer."
+    },
+    "url": null
+  },
+  {
+    "id": "cyberdefenders",
+    "category": "learning-profile",
+    "icon": "cyberdefenders",
+    "title": "CyberDefenders",
+    "description": {
+      "en": "Blue-team investigations; profile URL pending confirmation.",
+      "fr": "Investigations Blue Team ; URL du profil à confirmer."
+    },
+    "url": null
+  }
+]

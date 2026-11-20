@@ -1,0 +1,62 @@
+[
+  {
+    "id": "it-support-experience",
+    "organization": {
+      "en": "IT support experience",
+      "fr": "Expérience en support informatique"
+    },
+    "position": null,
+    "employmentType": "practical",
+    "startDate": {
+      "en": "Since 2021",
+      "fr": "Depuis 2021"
+    },
+    "endDate": null,
+    "current": true,
+    "location": null,
+    "responsibilities": {
+      "en": ["IT support experience since 2021; further role and duty details were not provided."],
+      "fr": ["Expérience en support informatique depuis 2021 ; les détails du poste et des tâches n'ont pas été fournis."]
+    },
+    "achievements": [],
+    "technologies": [],
+    "evidenceUrl": null
+  },
+  {
+    "id": "boldtech-ghana",
+    "organization": "Boldtech Ghana/Solutions",
+    "position": null,
+    "employmentType": null,
+    "startDate": {
+      "en": "May 2025",
+      "fr": "Mai 2025"
+    },
+    "endDate": null,
+    "current": true,
+    "location": "Ghana",
+    "responsibilities": {
+      "en": ["Experience includes printing services, digital services, IT support and web development."],
+      "fr": ["L'expérience comprend des services d'impression, des services numériques, du support informatique et du développement web."]
+    },
+    "achievements": [],
+    "technologies": [],
+    "evidenceUrl": null
+  },
+  {
+    "id": "marina-supermarket",
+    "organization": "Marina Supermarket",
+    "position": null,
+    "employmentType": null,
+    "startDate": null,
+    "endDate": null,
+    "current": false,
+    "location": null,
+    "responsibilities": {
+      "en": ["Experience involving network and system administration, maintenance and deployment."],
+      "fr": ["Expérience portant sur l'administration réseau et système, la maintenance et le déploiement."]
+    },
+    "achievements": [],
+    "technologies": [],
+    "evidenceUrl": null
+  }
+]

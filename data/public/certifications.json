@@ -1,0 +1,127 @@
+{
+  "certifications": [
+    {
+      "id": "cisco-introduction-to-cybersecurity",
+      "visibility": "public",
+      "category": "security",
+      "categoryLabel": {
+        "en": "Security",
+        "fr": "Sécurité"
+      },
+      "title": {
+        "en": "Introduction to Cybersecurity",
+        "fr": "Introduction à la cybersécurité"
+      },
+      "issuer": "Cisco",
+      "issueDate": "10th April 2025",
+      "description": {
+        "en": "Completed in April 2025",
+        "fr": "Terminé en avril 2025"
+      },
+      "pdfPath": "assets/documents/certificates/_certificate_sylvestrezongo7-gmail-com_a03c8cb6-f7d7-44d1-9cfe-618b8feb3eed.pdf",
+      "verificationUrl": "https://www.netacad.com/certificates/?issuanceId=a03c8cb6-f7d7-44d1-9cfe-618b8feb3eed",
+      "credentialId": null
+    },
+    {
+      "id": "anssi-securite-numerique",
+      "visibility": "public",
+      "category": "security",
+      "categoryLabel": {
+        "en": "Security",
+        "fr": "Sécurité"
+      },
+      "title": {
+        "en": "MOOC Sécurité Numérique",
+        "fr": "MOOC Sécurité Numérique"
+      },
+      "issuer": "ANSSI",
+      "issueDate": "14th March 2025",
+      "description": {
+        "en": "March 2025",
+        "fr": "Mars 2025"
+      },
+      "pdfPath": "assets/documents/certificates/certf_MOOC_ANNSI.pdf",
+      "verificationUrl": null,
+      "credentialId": null
+    },
+    {
+      "id": "google-technical-support-fundamentals",
+      "visibility": "public",
+      "category": "foundations",
+      "categoryLabel": {
+        "en": "Foundations",
+        "fr": "Bases"
+      },
+      "title": {
+        "en": "Technical Support Fundamentals",
+        "fr": "Bases du support technique"
+      },
+      "issuer": "Google",
+      "issueDate": null,
+      "description": {
+        "en": "Listed in the existing portfolio. Completion date and supporting proof have not been provided.",
+        "fr": "Mentionné dans le portfolio existant. La date de fin et le justificatif n'ont pas été fournis."
+      },
+      "pdfPath": null,
+      "verificationUrl": null,
+      "credentialId": null
+    },
+    {
+      "id": "microsoft-ai-skills-fest",
+      "visibility": "public",
+      "category": "learning",
+      "categoryLabel": {
+        "en": "Learning",
+        "fr": "Apprentissage"
+      },
+      "title": {
+        "en": "AI Skills Fest learning badges",
+        "fr": "Badges de formation AI Skills Fest"
+      },
+      "issuer": "Microsoft",
+      "issueDate": null,
+      "description": {
+        "en": "Listed in the existing portfolio. Badge details, issue dates and supporting proof have not been provided.",
+        "fr": "Mentionné dans le portfolio existant. Les détails des badges, leurs dates d'émission et les justificatifs n'ont pas été fournis."
+      },
+      "pdfPath": null,
+      "verificationUrl": null,
+      "credentialId": null
+    }
+  ],
+  "academic": [
+    {
+      "id": "btech-cybersecurity",
+      "visibility": "public",
+      "institution": "Tamale Technical University (TaTU)",
+      "programme": {
+        "en": "BTech in Cybersecurity",
+        "fr": "BTech en cybersécurité"
+      },
+      "graduationDate": null,
+      "description": {
+        "en": "Third-year BTech student in Cybersecurity at Tamale Technical University.",
+        "fr": "Étudiant en troisième année de BTech en cybersécurité à la Tamale Technical University."
+      },
+      "verificationUrl": null,
+      "documents": [
+        {
+          "kind": "diploma",
+          "label": {
+            "en": "Diploma",
+            "fr": "Diplôme"
+          },
+          "pdfPath": null
+        },
+        {
+          "kind": "transcript",
+          "label": {
+            "en": "Transcript",
+            "fr": "Relevé de notes"
+          },
+          "pdfPath": null
+        }
+      ]
+    }
+  ]
+}
