@@ -2,7 +2,7 @@
 
 const test = require("node:test");
 const assert = require("node:assert/strict");
-const { safeDocumentPath, externalUrl } = require("../security-utils.js");
+const { safeDocumentPath, safeImagePath, externalUrl } = require("../assets/js/security-utils.js");
 
 // Synthetic valid paths are used here. Real personal certificate documents are
 // deliberately not referenced by tests, data files or public configuration.
@@ -67,6 +67,48 @@ test("rejects paths outside the approved folders and non-PDF files", () => {
   assert.equal(safeDocumentPath("assets/documents/certificates//example.pdf"), null);
   assert.equal(safeDocumentPath(""), null);
   assert.equal(safeDocumentPath(null), null);
+});
+
+test("accepts valid image paths in the approved public folders", () => {
+  assert.equal(safeImagePath("assets/documents/certificates/badge.png"),
+    "assets/documents/certificates/badge.png");
+  assert.equal(safeImagePath("assets/documents/achievements/badge.webp"),
+    "assets/documents/achievements/badge.webp");
+  assert.equal(safeImagePath("assets/icons/issuers/cisco.png"),
+    "assets/icons/issuers/cisco.png");
+  assert.equal(safeImagePath("assets/icons/issuers/microsoft.png"),
+    "assets/icons/issuers/microsoft.png");
+  assert.equal(safeImagePath("assets/icons/issuers/google.png"),
+    "assets/icons/issuers/google.png");
+  assert.equal(safeImagePath("assets/icons/issuers/anssi.png"),
+    "assets/icons/issuers/anssi.png");
+  assert.equal(safeImagePath("assets/images/issuers/anssi.png"),
+    "assets/images/issuers/anssi.png");
+  assert.equal(safeImagePath("assets/icons/issuers/tatu.png"),
+    "assets/icons/issuers/tatu.png");
+  assert.equal(safeImagePath("assets/documents/certificates/Badge.JPEG"),
+    "assets/documents/certificates/Badge.JPEG");
+});
+
+test("rejects unsafe image paths without weakening PDF validation", () => {
+  assert.equal(safeImagePath("assets/documents/certificates/../private.png"), null);
+  assert.equal(safeImagePath("assets/documents/certificates/%2e%2e/private.png"), null);
+  assert.equal(safeImagePath("assets/documents/certificates/%252e%252e/private.png"), null);
+  assert.equal(safeImagePath("assets/documents/certificates/./badge.png"), null);
+  assert.equal(safeImagePath("assets/documents/certificates//badge.png"), null);
+  assert.equal(safeImagePath("assets/documents/private-documents/badge.png"), null);
+  assert.equal(safeImagePath("assets/documents/certificates/private-documents/badge.png"), null);
+  assert.equal(safeImagePath("assets/images/issuers/../private-documents/anssi.png"), null);
+  assert.equal(safeImagePath("assets/images/issuers/%2e%2e/private-documents/anssi.png"), null);
+  assert.equal(safeImagePath("assets/images/issuers/anssi.svg"), null);
+  assert.equal(safeImagePath("/assets/documents/certificates/badge.png"), null);
+  assert.equal(safeImagePath("https://example.org/badge.png"), null);
+  assert.equal(safeImagePath("assets/documents/certificates/badge.svg"), null);
+  assert.equal(safeImagePath("assets/icons/issuers/cisco.svg"), null);
+  assert.equal(safeImagePath("assets/documents/certificates/badge.pdf"), null);
+  assert.equal(safeImagePath(""), null);
+  assert.equal(safeImagePath(null), null);
+  assert.equal(safeDocumentPath("assets/documents/certificates/badge.png"), null);
 });
 
 test("accepts only valid HTTPS external URLs", () => {

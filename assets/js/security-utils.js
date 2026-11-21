@@ -55,12 +55,48 @@
     return value;
   }
 
-  const api = { externalUrl: externalUrl, safeDocumentPath: safeDocumentPath };
+  /*
+   * Image assets are validated separately from PDF documents. Only local,
+   * public asset folders may be used, and only raster badge/logo formats are
+   * accepted. The PDF rules above are deliberately left unchanged.
+   */
+  const PUBLIC_IMAGE_ROOTS = [
+    /^assets\/documents\/(certificates|achievements)\//i,
+    /^assets\/icons\/issuers\//i,
+    /^assets\/images\/issuers\//i
+  ];
+
+  function safeImagePath(path) {
+    if (typeof path !== "string" || !path.trim()) return null;
+    const value = path.trim();
+
+    // Encoded traversal and malformed encodings are rejected without decoding.
+    if (value.includes("%") || /[\u0000-\u001F\u007F]/.test(value)) return null;
+
+    // No backslashes, schemes, query strings, fragments or absolute paths.
+    if (value.includes("\\") || value.includes("://") || value.includes("?") ||
+        value.includes("#") || value.startsWith("/")) return null;
+
+    if (!PUBLIC_IMAGE_ROOTS.some(function (root) { return root.test(value); })) return null;
+
+    const parts = value.split("/");
+    if (parts.some(function (part) {
+      return part === "" || part === "." || part === ".." ||
+             part.toLowerCase() === "private-documents";
+    })) return null;
+
+    if (!/\.(png|jpe?g|webp)$/i.test(value)) return null;
+
+    return value;
+  }
+
+  const api = { externalUrl: externalUrl, safeDocumentPath: safeDocumentPath, safeImagePath: safeImagePath };
 
   if (typeof module === "object" && module.exports) {
     module.exports = api;
   } else {
     global.externalUrl = externalUrl;
     global.safeDocumentPath = safeDocumentPath;
+    global.safeImagePath = safeImagePath;
   }
 })(typeof globalThis !== "undefined" ? globalThis : this);

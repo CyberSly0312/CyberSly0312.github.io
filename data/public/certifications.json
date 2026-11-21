@@ -13,11 +13,13 @@
         "fr": "Introduction à la cybersécurité"
       },
       "issuer": "Cisco",
+      "issuerLogo": "assets/icons/issuers/cisco.png",
       "issueDate": "10th April 2025",
       "description": {
         "en": "Completed in April 2025",
         "fr": "Terminé en avril 2025"
       },
+      "badgeImage": "assets/documents/certificates/introduction-to-cybersecurity.png",
       "pdfPath": "assets/documents/certificates/_certificate_sylvestrezongo7-gmail-com_a03c8cb6-f7d7-44d1-9cfe-618b8feb3eed.pdf",
       "verificationUrl": "https://www.netacad.com/certificates/?issuanceId=a03c8cb6-f7d7-44d1-9cfe-618b8feb3eed",
       "credentialId": null
@@ -35,11 +37,14 @@
         "fr": "MOOC Sécurité Numérique"
       },
       "issuer": "ANSSI",
+      "issuerLogo": "assets/images/issuers/anssi.png",
+      "issuerLogoVariant": "emblem",
       "issueDate": "14th March 2025",
       "description": {
         "en": "March 2025",
         "fr": "Mars 2025"
       },
+      "badgeImage": null,
       "pdfPath": "assets/documents/certificates/certf_MOOC_ANNSI.pdf",
       "verificationUrl": null,
       "credentialId": null
@@ -57,13 +62,15 @@
         "fr": "Bases du support technique"
       },
       "issuer": "Google",
-      "issueDate": null,
+      "issuerLogo": "assets/icons/issuers/google.png",
+      "issueDate": "20th September 2025",
       "description": {
-        "en": "Listed in the existing portfolio. Completion date and supporting proof have not been provided.",
-        "fr": "Mentionné dans le portfolio existant. La date de fin et le justificatif n'ont pas été fournis."
+        "en": "",
+        "fr": ""
       },
-      "pdfPath": null,
-      "verificationUrl": null,
+      "badgeImage": null,
+      "pdfPath": "assets/documents/certificates/Coursera SAMH5QR4LOPO.pdf",
+      "verificationUrl": "https://coursera.org/share/2c876f60e23a324c7a2d66d632d0174e",
       "credentialId": null
     },
     {
@@ -79,11 +86,13 @@
         "fr": "Badges de formation AI Skills Fest"
       },
       "issuer": "Microsoft",
+      "issuerLogo": "assets/icons/issuers/microsoft.png",
       "issueDate": null,
       "description": {
-        "en": "Listed in the existing portfolio. Badge details, issue dates and supporting proof have not been provided.",
-        "fr": "Mentionné dans le portfolio existant. Les détails des badges, leurs dates d'émission et les justificatifs n'ont pas été fournis."
+        "en": "AI Skills Fest learning badge.",
+        "fr": "Badge de formation AI Skills Fest."
       },
+      "badgeImage": "assets/documents/certificates/ai-skills-fest-2026.png",
       "pdfPath": null,
       "verificationUrl": null,
       "credentialId": null
@@ -94,6 +103,8 @@
       "id": "btech-cybersecurity",
       "visibility": "public",
       "institution": "Tamale Technical University (TaTU)",
+      "institutionLogo": "assets/icons/issuers/tatu.png",
+      "institutionLogoVariant": "light-back",
       "programme": {
         "en": "BTech in Cybersecurity",
         "fr": "BTech en cybersécurité"

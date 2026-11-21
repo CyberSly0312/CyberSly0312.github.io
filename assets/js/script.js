@@ -25,7 +25,7 @@ const translations = {
   projectsTitle:"Things I've been building.",allRepos:"ALL REPOSITORIES",projectTypeBuild:"IN DEVELOPMENT",projectTypeLive:"DEPLOYED PROJECT",nexusDesc:"A school management platform designed around the needs of French-speaking schools, with multi-tenant architecture and modular academic workflows.",shopDesc:"An e-commerce application project exploring backend development, API design and database-driven features.",aganiwuDesc:"A business website developed with native PHP, MySQL and frontend technologies, including a custom content management area.",viewRepository:"Browse repositories",visitWebsite:"Visit website",projectNote:"Project descriptions reflect current known scope. More case studies and screenshots will be added as projects are documented.",
   activityTitle:"Consistency over noise.",contributionTitle:"Contribution activity",contributionLoading:"Loading public contribution data…",contributionUnavailable:"Contribution data could not be loaded right now.",contributionFallback:"Visit the GitHub profile to view contribution activity.",contributionNote:"Contribution calendar loads from a public community endpoint. If unavailable, it will show a fallback message.",less:"Less",more:"More",
   credentialsTitle:"Credentials & education.",professionalCertifications:"Professional certifications",academicCredentials:"Academic credentials",certificatesPath:"assets/documents/certificates/",academicPath:"assets/documents/academic/",credentialDisclaimer:"Only listed items with supplied documents or public verification links can be opened. Pending details are not endorsements or verification claims.",
-  credentialIssueDate:"Issue date",credentialIssuer:"Issuing organization",credentialType:"Credential type",credentialId:"Credential ID",credentialIdPending:"Not provided",credentialDatePending:"Not provided",credentialView:"View Certificate",credentialVerify:"Verify Credential",credentialDocumentPending:"Document pending",credentialDocumentChecking:"Checking document availability…",credentialDocumentUnavailable:"Document unavailable. Check the file path before publishing.",credentialVerificationUnavailable:"No public verification link provided.",credentialPending:"Details pending",
+  credentialIssueDate:"Issue date",credentialIssuer:"Issuing organization",credentialType:"Credential type",credentialId:"Credential ID",credentialIdPending:"Not provided",credentialDatePending:"Not provided",credentialView:"View Certificate",credentialVerify:"Verify Credential",credentialDocumentPending:"Document pending",credentialDocumentChecking:"Checking document availability…",credentialDocumentUnavailable:"Document unavailable. Check the file path before publishing.",credentialVerificationUnavailable:"No public verification link provided.",credentialPending:"Details pending",credentialIssuerLogoAlt:"{name} logo",credentialBadgeAlt:"{name} badge",academicInstitutionLogoAlt:"{name} logo",
    filterAll:"All",filterLabel:"Filter certifications by category",certificationsEmpty:"No public certifications to display.",academicEmpty:"No public academic records to display.",academicKind:"Academic record",academicInstitution:"Institution",academicProgramme:"Programme",academicGraduationDate:"Graduation date",academicDocuments:"Documents",academicNoDocuments:"No public document or verification link provided.",documentView:"View PDF",projectUrlPending:"Link pending confirmation",projectsEmpty:"No public projects to display.",profilesEmpty:"No public profiles to display.",experienceEmpty:"No public experience to display.",dataLoading:"Loading portfolio data…",dataLoadTitle:"Portfolio data unavailable.",dataLoadHint:"Serve this folder over HTTP (for example python -m http.server) and check the JSON files in data/public.",
   experienceTitle:"Experience in practice.",experienceType:"Experience type",experienceStart:"From",experienceEnd:"To",experienceLocation:"Location",experienceResponsibilities:"Responsibilities",experienceAchievements:"Achievements",experienceTools:"Technologies & tools",experienceEvidence:"Supporting reference",experiencePositionPending:"Position details pending",experienceTypePending:"Type not specified",experienceDatePending:"Dates not provided",experienceLocationPending:"Location not provided",experienceNoDetails:"Not provided",experiencePresent:"Present",experienceTypeEmployment:"Employment",experienceTypeInternship:"Internship",experienceTypeFreelance:"Freelance",experienceTypePractical:"Practical experience",
   footprintTitle:"Verified work & profiles.",footprintIntro:"Public links and profiles. A link's presence does not imply third-party endorsement.",footprintCategoryProfile:"Professional profile",footprintCategoryWebsite:"Live website",footprintCategoryRepository:"GitHub repository",footprintCategoryLearningProfile:"Learning profile",footprintCategoryDemo:"Project demonstration",footprintCategoryDocumentation:"Public documentation",footprintCategoryVerification:"Credential verification",footprintCategoryReference:"Reference or work attestation",footprintOpen:"View profile",footprintViewRepository:"View repository",footprintVisitWebsite:"Visit website",footprintPending:"Link pending confirmation",
@@ -47,7 +47,7 @@ const translations = {
   projectsTitle:"Ce que je construis.",allRepos:"TOUS LES DÉPÔTS",projectTypeBuild:"EN DÉVELOPPEMENT",projectTypeLive:"PROJET EN LIGNE",nexusDesc:"Une plateforme de gestion scolaire pensée pour les établissements francophones, avec une architecture multi-tenant et des modules dédiés aux processus académiques.",shopDesc:"Un projet d'application e-commerce consacré au développement backend, à la conception d'API et aux fonctionnalités pilotées par une base de données.",aganiwuDesc:"Un site web professionnel développé avec PHP natif, MySQL et des technologies frontend, comprenant un espace de gestion de contenu personnalisé.",viewRepository:"Parcourir les dépôts",visitWebsite:"Visiter le site",projectNote:"Les descriptions reflètent le périmètre actuellement connu. D'autres études de cas et captures seront ajoutées au fil de la documentation des projets.",
   activityTitle:"La régularité plutôt que le bruit.",contributionTitle:"Activité de contribution",contributionLoading:"Chargement des contributions publiques…",contributionUnavailable:"Les données de contribution ne sont pas disponibles pour le moment.",contributionFallback:"Consultez le profil GitHub pour voir l'activité de contribution.",contributionNote:"Le calendrier est chargé depuis un service communautaire public. Un message alternatif s'affichera en cas d'indisponibilité.",less:"Moins",more:"Plus",
   credentialsTitle:"Diplômes et certifications.",professionalCertifications:"Certifications professionnelles",academicCredentials:"Diplômes et formation",certificatesPath:"assets/documents/certificates/",academicPath:"assets/documents/academic/",credentialDisclaimer:"Seuls les éléments disposant d'un document ou d'un lien public fourni peuvent être ouverts. Les informations en attente ne constituent ni une recommandation ni une vérification.",
-  credentialIssueDate:"Date d'émission",credentialIssuer:"Organisme émetteur",credentialType:"Type de titre",credentialId:"Identifiant du titre",credentialIdPending:"Non fourni",credentialDatePending:"Non fournie",credentialView:"Voir le certificat",credentialVerify:"Vérifier le titre",credentialDocumentPending:"Document en attente",credentialDocumentChecking:"Vérification de la disponibilité du document…",credentialDocumentUnavailable:"Document indisponible. Vérifiez le chemin du fichier avant publication.",credentialVerificationUnavailable:"Aucun lien public de vérification fourni.",credentialPending:"Informations en attente",
+  credentialIssueDate:"Date d'émission",credentialIssuer:"Organisme émetteur",credentialType:"Type de titre",credentialId:"Identifiant du titre",credentialIdPending:"Non fourni",credentialDatePending:"Non fournie",credentialView:"Voir le certificat",credentialVerify:"Vérifier le titre",credentialDocumentPending:"Document en attente",credentialDocumentChecking:"Vérification de la disponibilité du document…",credentialDocumentUnavailable:"Document indisponible. Vérifiez le chemin du fichier avant publication.",credentialVerificationUnavailable:"Aucun lien public de vérification fourni.",credentialPending:"Informations en attente",credentialIssuerLogoAlt:"Logo {name}",credentialBadgeAlt:"Badge {name}",academicInstitutionLogoAlt:"Logo {name}",
    filterAll:"Tous",filterLabel:"Filtrer les certifications par catégorie",certificationsEmpty:"Aucune certification publique à afficher.",academicEmpty:"Aucun diplôme public à afficher.",academicKind:"Titre académique",academicInstitution:"Établissement",academicProgramme:"Programme",academicGraduationDate:"Date de diplomation",academicDocuments:"Documents",academicNoDocuments:"Aucun document public ni lien de vérification fourni.",documentView:"Voir le PDF",projectUrlPending:"Lien à confirmer",projectsEmpty:"Aucun projet public à afficher.",profilesEmpty:"Aucun profil public à afficher.",experienceEmpty:"Aucune expérience publique à afficher.",dataLoading:"Chargement des données du portfolio…",dataLoadTitle:"Données du portfolio indisponibles.",dataLoadHint:"Servez ce dossier via HTTP (par exemple python -m http.server) et vérifiez les fichiers JSON dans data/public.",
   experienceTitle:"L'expérience sur le terrain.",experienceType:"Type d'expérience",experienceStart:"Depuis",experienceEnd:"Jusqu'à",experienceLocation:"Lieu",experienceResponsibilities:"Responsabilités",experienceAchievements:"Réalisations",experienceTools:"Technologies et outils",experienceEvidence:"Référence justificative",experiencePositionPending:"Intitulé du poste à confirmer",experienceTypePending:"Type non précisé",experienceDatePending:"Dates non fournies",experienceLocationPending:"Lieu non fourni",experienceNoDetails:"Non renseigné",experiencePresent:"À ce jour",experienceTypeEmployment:"Emploi",experienceTypeInternship:"Stage",experienceTypeFreelance:"Freelance",experienceTypePractical:"Expérience pratique",
   footprintTitle:"Travaux et profils publics.",footprintIntro:"Liens et profils publics. Leur présence ne signifie pas qu'un tiers approuve ou certifie le travail.",footprintCategoryProfile:"Profil professionnel",footprintCategoryWebsite:"Site en ligne",footprintCategoryRepository:"Dépôt GitHub",footprintCategoryLearningProfile:"Profil d'apprentissage",footprintCategoryDemo:"Démonstration de projet",footprintCategoryDocumentation:"Documentation publique",footprintCategoryVerification:"Vérification de titre",footprintCategoryReference:"Référence ou attestation",footprintOpen:"Voir le profil",footprintViewRepository:"Voir le dépôt",footprintVisitWebsite:"Visiter le site",footprintPending:"Lien à confirmer",
@@ -114,7 +114,7 @@ function viewerStrings(){
 }
 function loadPdfViewerModule(){
  if(!pdfViewerModulePromise){
-  pdfViewerModulePromise=import(new URL("pdf-viewer.js",document.baseURI).href)
+  pdfViewerModulePromise=import(new URL("assets/js/pdf-viewer.js",document.baseURI).href)
    .then(module=>{pdfViewerModule=module;return module;})
    .catch(error=>{pdfViewerModulePromise=null;throw error;});
  }
@@ -175,6 +175,33 @@ function detailRow(details,label,value){
  group.append(textElement("dt","",label),textElement("dd","",value));
  details.appendChild(group);
 }
+function localizedAlt(template,name){
+ return (template||"{name}").replace("{name}",name||"");
+}
+function credentialContent(){
+ const content=document.createElement("div");
+ content.className="credential-card__content";
+ return content;
+}
+function addCredentialImage(card,path,className,altText,fallbackClasses,restoreClasses,variant){
+ const safePath=typeof safeImagePath==="function"?safeImagePath(path):null;
+ if(!safePath)return null;
+ const image=document.createElement("img");
+ image.className=className;
+ // Variants are explicit allow-listed names, never raw data values.
+ if(variant==="emblem")image.classList.add("credential-issuer-logo--emblem");
+ else if(variant==="light-back")image.classList.add("credential-issuer-logo--light-back");
+ image.src=safePath;
+ image.alt=altText;
+ image.decoding="async";
+ image.addEventListener("error",()=>{
+  image.remove();
+  (fallbackClasses||[]).forEach(name=>card.classList.remove(name));
+  (restoreClasses||[]).forEach(name=>card.classList.add(name));
+ },{once:true});
+ card.appendChild(image);
+ return image;
+}
 function addVerification(container,item){
  const verification=externalUrl(item.verificationUrl);
  if(!verification)return null;
@@ -206,26 +233,37 @@ function renderCertifications(){
  renderCertificationFilters(all);
  const items=activeCertificationCategory==="all"?all:all.filter(item=>item.category===activeCertificationCategory);
  if(!items.length){target.appendChild(textElement("p","data-empty mono",translations[currentLang].certificationsEmpty));return;}
+ const strings=translations[currentLang];
  items.forEach(item=>{
-  const card=textElement("article","credential-card glass-card","");
+  const card=textElement("article","credential-card glass-card"+(item.badgeImage?" credential-card--badge":""),"");
+  const content=credentialContent();
   const type=textElement("p","credential-kind mono",localizedValue(item.categoryLabel)||item.category||"");
   const title=textElement("h4","",localizedValue(item.title));
   const description=textElement("p","credential-description",localizedValue(item.description));
   const details=document.createElement("dl");details.className="credential-details";
-  detailRow(details,translations[currentLang].credentialIssuer,localizedValue(item.issuer)||translations[currentLang].credentialPending);
-  detailRow(details,translations[currentLang].credentialIssueDate,localizedValue(item.issueDate)||translations[currentLang].credentialDatePending);
-  detailRow(details,translations[currentLang].credentialType,localizedValue(item.categoryLabel)||item.category||translations[currentLang].credentialPending);
-  if(item.credentialId)detailRow(details,translations[currentLang].credentialId,item.credentialId);
+  detailRow(details,strings.credentialIssuer,localizedValue(item.issuer)||strings.credentialPending);
+  detailRow(details,strings.credentialIssueDate,localizedValue(item.issueDate)||strings.credentialDatePending);
+  detailRow(details,strings.credentialType,localizedValue(item.categoryLabel)||item.category||strings.credentialPending);
+  if(item.credentialId)detailRow(details,strings.credentialId,item.credentialId);
   const actions=document.createElement("div");actions.className="credential-actions";
-  const documentStatus=item.pdfPath?textElement("p","credential-document-status mono",translations[currentLang].credentialDocumentChecking):null;
-  const documentUnavailable=()=>{if(documentStatus)documentStatus.textContent=translations[currentLang].credentialDocumentUnavailable;};
-  const viewerTitle=localizedValue(item.title)||translations[currentLang].pdfViewerTitle;
-   addCredentialAction(actions,item.pdfPath,translations[currentLang].credentialView,documentUnavailable,"",viewerTitle);
-    const verification=addVerification(actions,item);
-  card.append(type,title,description,details,actions);
+  const documentStatus=item.pdfPath?textElement("p","credential-document-status mono",strings.credentialDocumentChecking):null;
+  const documentUnavailable=()=>{if(documentStatus)documentStatus.textContent=strings.credentialDocumentUnavailable;};
+  const viewerTitle=localizedValue(item.title)||strings.pdfViewerTitle;
+  addCredentialAction(actions,item.pdfPath,strings.credentialView,documentUnavailable,"",viewerTitle);
+  const verification=addVerification(actions,item);
+  content.append(type,title,description,details,actions);
+  if(documentStatus)content.appendChild(documentStatus);
+  if(!item.pdfPath&&!verification)content.appendChild(textElement("p","credential-pending mono",strings.credentialPending));
+  card.appendChild(content);
+  const issuer=localizedValue(item.issuer)||"";
+  const issuerLogo=addCredentialImage(card,item.issuerLogo,"credential-issuer-logo",localizedAlt(strings.credentialIssuerLogoAlt,issuer),["credential-card--logo-only"],null,item.issuerLogoVariant);
+  if(issuerLogo&&!item.badgeImage)card.classList.add("credential-card--logo-only");
+  const badge=addCredentialImage(card,item.badgeImage,"credential-badge__image",localizedAlt(strings.credentialBadgeAlt,localizedValue(item.title)||""),["credential-card--badge"],issuerLogo?["credential-card--logo-only"]:[]);
+  if(!badge){
+   card.classList.remove("credential-card--badge");
+   if(issuerLogo)card.classList.add("credential-card--logo-only");
+  }
   revealElement(card);
-  if(documentStatus)card.appendChild(documentStatus);
-  if(!item.pdfPath&&!verification)card.appendChild(textElement("p","credential-pending mono",translations[currentLang].credentialPending));
   target.appendChild(card);
  });
 }
@@ -233,37 +271,43 @@ function renderAcademic(){
  const target=$("#academicCredentials");target.replaceChildren();
  const items=publicRecords(portfolioData.academic);
  if(!items.length){target.appendChild(textElement("p","data-empty mono",translations[currentLang].academicEmpty));return;}
+ const strings=translations[currentLang];
  items.forEach(item=>{
   const card=textElement("article","credential-card glass-card","");
-  const kind=textElement("p","credential-kind mono",translations[currentLang].academicKind);
+  const content=credentialContent();
+  const kind=textElement("p","credential-kind mono",strings.academicKind);
   const title=textElement("h4","",localizedValue(item.programme)||localizedValue(item.title));
   const description=textElement("p","credential-description",localizedValue(item.description));
   const details=document.createElement("dl");details.className="credential-details";
-  detailRow(details,translations[currentLang].academicInstitution,localizedValue(item.institution)||translations[currentLang].credentialPending);
-  detailRow(details,translations[currentLang].academicGraduationDate,localizedValue(item.graduationDate)||translations[currentLang].credentialDatePending);
-  detailRow(details,translations[currentLang].academicProgramme,localizedValue(item.programme)||translations[currentLang].credentialPending);
-  card.append(kind,title,description,details);
-  revealElement(card);
+  detailRow(details,strings.academicInstitution,localizedValue(item.institution)||strings.credentialPending);
+  detailRow(details,strings.academicGraduationDate,localizedValue(item.graduationDate)||strings.credentialDatePending);
+  detailRow(details,strings.academicProgramme,localizedValue(item.programme)||strings.credentialPending);
+  content.append(kind,title,description,details);
   const documents=Array.isArray(item.documents)?item.documents:[];
   if(documents.length){
-   card.appendChild(textElement("h5","academic-documents-label mono",translations[currentLang].academicDocuments));
+   content.appendChild(textElement("h5","academic-documents-label mono",strings.academicDocuments));
    documents.forEach(documentItem=>{
     const row=textElement("div","academic-document","");
     row.appendChild(textElement("span","academic-document-label mono",localizedValue(documentItem.label)||documentItem.kind||""));
     const actions=document.createElement("div");actions.className="credential-actions";
-    const documentStatus=documentItem.pdfPath?textElement("p","credential-document-status mono",translations[currentLang].credentialDocumentChecking):null;
-    const documentUnavailable=()=>{if(documentStatus)documentStatus.textContent=translations[currentLang].credentialDocumentUnavailable;};
-    const docLabel=localizedValue(documentItem.label)||documentItem.kind||translations[currentLang].documentView;
-     const documentTitle=`${localizedValue(item.programme)||localizedValue(item.title)||translations[currentLang].academicKind} — ${docLabel}`;
-     addCredentialAction(actions,documentItem.pdfPath,translations[currentLang].documentView,documentUnavailable,"",documentTitle);
-        row.appendChild(actions);if(documentStatus)row.appendChild(documentStatus);
-    card.appendChild(row);
+    const documentStatus=documentItem.pdfPath?textElement("p","credential-document-status mono",strings.credentialDocumentChecking):null;
+    const documentUnavailable=()=>{if(documentStatus)documentStatus.textContent=strings.credentialDocumentUnavailable;};
+    const docLabel=localizedValue(documentItem.label)||documentItem.kind||strings.documentView;
+    const documentTitle=`${localizedValue(item.programme)||localizedValue(item.title)||strings.academicKind} — ${docLabel}`;
+    addCredentialAction(actions,documentItem.pdfPath,strings.documentView,documentUnavailable,"",documentTitle);
+    row.appendChild(actions);if(documentStatus)row.appendChild(documentStatus);
+    content.appendChild(row);
    });
   }
   const verificationActions=document.createElement("div");verificationActions.className="credential-actions academic-verification";
   const verification=addVerification(verificationActions,item);
-  if(verification)card.appendChild(verificationActions);
-  if(!documents.length&&!verification)card.appendChild(textElement("p","credential-pending mono",translations[currentLang].academicNoDocuments));
+  if(verification)content.appendChild(verificationActions);
+  if(!documents.length&&!verification)content.appendChild(textElement("p","credential-pending mono",strings.academicNoDocuments));
+  card.appendChild(content);
+  const institution=localizedValue(item.institution)||"";
+  const logo=addCredentialImage(card,item.institutionLogo,"credential-issuer-logo",localizedAlt(strings.academicInstitutionLogoAlt,institution),["credential-card--logo-only"],null,item.institutionLogoVariant);
+  if(logo)card.classList.add("credential-card--logo-only");
+  revealElement(card);
   target.appendChild(card);
  });
 }
@@ -625,8 +669,8 @@ function startContributions(){
  loadContributions();
 }
 
-// Prefer a personal portrait at assets/profile.jpg. If absent, keep the included illustrated placeholder.
-const portrait=$("#portrait");portrait.addEventListener("error",()=>{portrait.src="assets/profile-placeholder.svg";});
+// Prefer a personal portrait at assets/images/profile.jpg. If absent, keep the included illustrated placeholder.
+const portrait=$("#portrait");portrait.addEventListener("error",()=>{portrait.src="assets/images/profile-placeholder.svg";});
 const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target);}}),{threshold:.12});
 $$("section:not(.hero) .section-heading, .glass-card, .stack-card, .project-card, .contact-card").forEach(el=>{el.classList.add("reveal");observer.observe(el);});
 function revealElement(element){
